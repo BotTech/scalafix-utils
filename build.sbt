@@ -31,7 +31,6 @@ lazy val `scalafix-utils` = (projectMatrix in file("."))
     libraryDependencies ++= Seq(
       "ch.epfl.scala" %% "scalafix-core" % ScalafixBuildInfo.scalafixVersion,
       "org.scalatest" %% "scalatest" % "3.2.15" % Test
-    ),
+    )
   )
   .jvmPlatform(rulesCrossVersions)
-  .defaultAxes(VirtualAxis.jvm)
